@@ -1,0 +1,221 @@
+body {
+    font-family: "微软雅黑";
+    font-size: 13px;
+    background-color: #1e1e1e;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+#guidebox {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #202020;
+    z-index: 2;
+}
+.guidelist {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    color: #aaaaaa;
+    font-size: 18px;
+}
+.guidelist li {
+    float: left;
+}
+.guidelist li a,
+.guidelist li a:visited {
+    color: #aaaaaa;
+    display: block;
+    line-height: 2.5em;
+    padding: 0px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #252525;
+}
+.guidelist li a:hover {
+    background-color: #303030;
+    text-decoration: none;
+}
+#searchbox {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 45px;
+    background-color: #303030;
+}
+#search {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 45px;
+}
+#search input {
+    font-size: 20px;
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    border: none;
+    padding: 0px 0px;
+    background-color: #252525;
+    color: #aaaaaa;
+}
+#search input:focus,
+#search input:hover {
+    background-color: #303030;
+}
+#infobox {
+    border-radius: 100px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #202020;
+    z-index: 0;
+}
+#infobox:hover {
+    background-color: #222222;
+}
+#infobox img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    border-radius: 100%;
+    transition-duration: .5s;
+}
+#infobox img:hover {
+    transform: scale(1.05,1.05);
+}
+#infobox p {
+    color: #aaaaaa;
+    font-size: 70px;
+    position: absolute;
+    top: 190px;
+    left: 130px;
+    transition-duration: .5s;
+}
+#infobox p:hover {
+    transform: scale(1.05,1.05);
+}
+#bigbox {
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    max-width: 100%;
+    min-height: 12%;
+    margin: 0 0 30px 0;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%,0);
+    /*background-color: #222222;*/
+    background: transparent;
+}
+.postl {
+    transition-duration: 0.3s;
+    height: 90px;
+    background-color: #252525;
+    margin: 5px 5px 5px 5px;
+    opacity: 0.99;
+}
+.postl:hover {
+    background-color: #303030;
+    transform: scale(1.05,1.05);
+}
+.postl:active {
+    transform: scale(1.1,1.1);
+}
+.postl a {
+    color: #aaaaaa;
+    font-size: 35px;
+    text-decoration: none;
+}
+.postl .titlebox {
+    padding: 10px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.postl .timebox {
+    margin: -5px 10px;
+}
+.postl .timebox time {
+    color: #555555;
+    font-size: 10px;
+}
+.page-navigator-box {
+    background-color: #252525;
+    margin: 5px 5px 0px 5px;
+    overflow: hidden;
+    opacity: 0.99;
+}
+.page-navigator {
+    list-style: none;
+    padding: 0px;
+    width: auto;
+    margin: auto;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+.page-navigator li {
+    float: left;
+}
+.page-navigator li a,
+.page-navigator li a:visited {
+    color: #aaaaaa;
+    display: block;
+    line-height: 3em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #252525;
+}
+.page-navigator li a:hover {
+    background-color: #303030;
+    text-decoration: none;
+}
+.posta {
+    background-color: #252525;
+    margin: 5px 5px 0px 5px;
+    padding: 20px;
+    color: #aaaaaa;
+    font-size: 18px;
+    overflow: hidden;
+    opacity: 0.99;
+    line-height: 2em;
+}
+#crbox {
+    background-color: #252525;
+    margin: 20px 5px 0 5px;
+    padding: 20px;
+    color: #aaaaaa;
+    font-size: 18px;
+    overflow: hidden;
+    opacity: 0.99;
+    text-align: center;
+}
+#crbox a,
+#crbox a:hover,
+#crbox a:active,
+#crbox a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+#scrollprogressbox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0px;
+    background-color: #0063b1;
+    opacity: 0.7;
+    z-index: 2;
+}
